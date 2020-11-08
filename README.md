@@ -1,5 +1,4 @@
-chat-app-node.js-socket.io-
-how to use this app on your computer:
+# Real Time Chat App
 
 ## Server
 
