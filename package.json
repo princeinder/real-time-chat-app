@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "cd react-client && npm install  && npm run build"
   },
   "author": "",
   "license": "ISC",
