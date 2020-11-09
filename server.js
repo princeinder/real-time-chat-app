@@ -11,7 +11,8 @@ const {
   getCurrentDate,
 } = require("./users");
 const router = require("./router");
-
+app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "react-client/build"))
 app.use(router);
 
 io.on("connection", function (socket) {
