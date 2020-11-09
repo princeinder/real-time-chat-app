@@ -51,7 +51,7 @@ io.on("connection", function (socket) {
   });
 });
 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 server.listen(port, function () {
   console.log(`server start working at ${port}`);
 });
