@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const http = require("http");
+const path = require("path");
 var server = http.createServer(app);
 const io = require("socket.io")(server);
 const {
@@ -12,7 +13,7 @@ const {
 } = require("./users");
 const router = require("./router");
 app.use(express.static("public"));
-app.use(express.static(path.join(__dirname, "react-client/build"))
+app.use(express.static(path.join(__dirname, "react-client/build")))
 app.use(router);
 
 io.on("connection", function (socket) {
